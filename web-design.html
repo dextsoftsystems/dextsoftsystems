@@ -1,1 +1,420 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dextsoft Systems designs responsive websites, business websites, e-learning platforms, and provides website maintenance.">
+  <title>Web Design & Development | Dextsoft Systems</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --blue: #155eef;
+      --navy: #142238;
+      --grey: #64748b;
+      --light: #f3f6fb;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy);
+      line-height: 1.7;
+      background: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      padding: 18px 7%;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+      color: var(--blue);
+    }
+
+    nav a {
+      color: var(--navy);
+      margin-left: 16px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      padding: 85px 7%;
+      background: linear-gradient(135deg, #142238, #1749a3);
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      color: #bfd4ff;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.2;
+      margin: 16px 0;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #e2eaff;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 6px;
+      background: var(--blue);
+      color: var(--white);
+      font-weight: bold;
+      margin-top: 22px;
+    }
+
+    .hero .button {
+      background: var(--white);
+      color: #1749a3;
+    }
+
+    section {
+      padding: 65px 7%;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 730px;
+      margin: 0 auto 35px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .muted,
+    .section-heading p {
+      color: var(--grey);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+      gap: 22px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      padding: 25px;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      background: var(--white);
+      box-shadow: 0 5px 20px rgba(20, 34, 56, 0.04);
+    }
+
+    .icon {
+      font-size: 30px;
+    }
+
+    .card h3 {
+      margin: 12px 0;
+      font-size: 20px;
+    }
+
+    .steps {
+      background: var(--light);
+    }
+
+    .step-number {
+      display: inline-flex;
+      width: 38px;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #eaf1ff;
+      color: var(--blue);
+      font-weight: bold;
+    }
+
+    .tech {
+      text-align: center;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 5px 3px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      background: #eaf1ff;
+      color: #1749a3;
+      font-size: 13px;
+    }
+
+    .contact {
+      text-align: center;
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .contact p {
+      max-width: 650px;
+      margin: auto;
+      color: #d5dfef;
+    }
+
+    .contact .button {
+      background: var(--white);
+      color: #1749a3;
+    }
+
+    footer {
+      padding: 22px;
+      text-align: center;
+      color: #cbd5e1;
+      background: #0c1728;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 16px 5%;
+      }
+
+      nav a {
+        margin: 0 12px 0 0;
+      }
+
+      .hero {
+        padding: 60px 6%;
+      }
+
+      section {
+        padding: 48px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a class="logo" href="index.html">DEXTSOFT SYSTEMS</a>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="data-analytics.html">Data Analytics</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">Web Design & Development</span>
+        <h1>Create a Professional Online Presence for Your Organisation</h1>
+        <p>
+          We help organisations establish and strengthen their online
+          presence through responsive websites, practical web applications,
+          and reliable website management.
+        </p>
+        <a class="button" href="#contact">Discuss Your Website</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-heading">
+        <h2>Our Web Solutions</h2>
+        <p>
+          From a simple business website to a more specialised online
+          platform, we focus on usability, clear communication,
+          responsive design, and practical functionality.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon" aria-hidden="true">🌐</div>
+          <h3>Business Websites</h3>
+          <p class="muted">
+            Professional websites that introduce your organisation,
+            showcase your services, build credibility, and help customers
+            contact you.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">📱</div>
+          <h3>Responsive Web Design</h3>
+          <p class="muted">
+            Websites designed to adapt to mobile phones, tablets,
+            laptops, and desktop screens for a consistent user experience.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">🎓</div>
+          <h3>E-Learning Platforms</h3>
+          <p class="muted">
+            Online learning solutions for training institutions,
+            educators, and organisations that want to deliver digital
+            learning content.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">⚙️</div>
+          <h3>Web Applications</h3>
+          <p class="muted">
+            Practical browser-based systems for selected business
+            processes, information management, and reporting needs.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">🛠️</div>
+          <h3>Website Maintenance</h3>
+          <p class="muted">
+            Assistance with website updates, content changes,
+            troubleshooting, routine checks, and ongoing website care.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">🔍</div>
+          <h3>Website Improvement</h3>
+          <p class="muted">
+            Improve existing websites through clearer layouts,
+            better navigation, mobile usability, and more effective
+            presentation of information.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="section-heading">
+        <h2>How We Work</h2>
+        <p>A clear process helps turn your idea into a useful website.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <span class="step-number">1</span>
+          <h3>Understand Your Needs</h3>
+          <p class="muted">
+            Discuss your organisation, target audience, goals,
+            required features, and budget.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="step-number">2</span>
+          <h3>Design & Develop</h3>
+          <p class="muted">
+            Plan the pages, create the layout, develop the agreed
+            functionality, and make the website responsive.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="step-number">3</span>
+          <h3>Test & Launch</h3>
+          <p class="muted">
+            Check links, forms, mobile layouts, and agreed features
+            before publishing the website.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="step-number">4</span>
+          <h3>Support & Maintain</h3>
+          <p class="muted">
+            Discuss ongoing updates, maintenance, and technical
+            support according to your requirements.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="tech">
+      <div class="section-heading">
+        <h2>Web Technologies</h2>
+        <p>
+          Technologies selected according to the requirements
+          and complexity of each project.
+        </p>
+      </div>
+
+      <div>
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">PHP</span>
+        <span class="tag">SQL</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Responsive Design</span>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Ready to Build Your Online Presence?</h2>
+      <p>
+        Tell us about your organisation, the website you need,
+        or the improvements you want to make to an existing site.
+        We can discuss a suitable solution for your requirements.
+      </p>
+      <a class="button"
+         href="mailto:charlesmaarah@gmail.com?subject=Web%20Design%20Enquiry">
+        Enquire About a Website
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Dextsoft Systems. All rights reserved.</p>
+    <p>Web Design | Web Development | Digital Solutions</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
