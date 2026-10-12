@@ -1,1 +1,432 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reliable IT support, computer troubleshooting, database management, data backup and IT maintenance from Dextsoft Systems in Nairobi, Kenya.">
+  <title>IT Support & Systems | Dextsoft Systems</title>
+
+  <style>
+    :root {
+      --blue: #155eef;
+      --dark-blue: #102a43;
+      --grey: #52606d;
+      --light-grey: #f3f6fa;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--dark-blue);
+      background: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e5eaf0;
+      padding: 18px 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      color: var(--blue);
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--grey);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #102a43, #155eef);
+      color: var(--white);
+      padding: 85px 0;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      color: #cbdcff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 28px;
+      color: #edf3ff;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--white);
+      color: var(--blue);
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #e8efff;
+    }
+
+    section {
+      padding: 65px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 38px;
+    }
+
+    .section-heading h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading p {
+      color: var(--grey);
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 28px;
+      border: 1px solid #e3e9f0;
+      border-radius: 10px;
+      box-shadow: 0 5px 18px rgba(16, 42, 67, 0.05);
+    }
+
+    .service-icon {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--grey);
+      font-size: 15px;
+    }
+
+    .why-us {
+      background: var(--light-grey);
+    }
+
+    .benefits {
+      max-width: 800px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .benefit {
+      background: var(--white);
+      padding: 22px;
+      border-radius: 8px;
+    }
+
+    .benefit h3 {
+      margin-bottom: 7px;
+      font-size: 17px;
+    }
+
+    .benefit p {
+      color: var(--grey);
+      font-size: 15px;
+    }
+
+    .process {
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .process-item {
+      padding: 18px 0;
+      border-bottom: 1px solid #e3e9f0;
+    }
+
+    .process-item h3 {
+      margin-bottom: 5px;
+    }
+
+    .process-item p {
+      color: var(--grey);
+    }
+
+    .contact {
+      background: var(--dark-blue);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .contact p {
+      color: #d9e2ec;
+      max-width: 650px;
+      margin: 12px auto 25px;
+    }
+
+    .contact .button {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    footer {
+      background: #0b1f33;
+      color: #cbd2d9;
+      text-align: center;
+      padding: 22px 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">Dextsoft Systems</a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="data-analytics.html">Data Analytics</a>
+        <a href="web-design.html">Web Design</a>
+        <a href="it-support.html">IT Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Reliable Technology. Reliable Business.</p>
+        <h1>IT Support &amp; Systems</h1>
+        <p>
+          Keep your computers, systems and data operating reliably.
+          We help businesses troubleshoot technical problems, maintain
+          their systems and protect important information.
+        </p>
+        <a class="button" href="#contact">Request IT Support</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h2>Our IT Support Services</h2>
+          <p>
+            Practical and dependable technology support to help reduce
+            downtime and keep your business running smoothly.
+          </p>
+        </div>
+
+        <div class="services">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">💻</div>
+            <h3>Software &amp; Hardware Troubleshooting</h3>
+            <p>
+              Assistance with computer errors, software installation,
+              operating system issues, device performance and common
+              hardware problems.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🛠️</div>
+            <h3>Technical Helpdesk Support</h3>
+            <p>
+              Support for everyday IT challenges, user access,
+              application issues, connectivity problems and general
+              technical questions.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🗄️</div>
+            <h3>Database Management</h3>
+            <p>
+              Help organising business data, maintaining database
+              records, running SQL queries and supporting reliable
+              access to information.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🔒</div>
+            <h3>Backup &amp; IT Maintenance</h3>
+            <p>
+              Assistance with backup routines, software updates,
+              system checks and maintenance practices that help
+              safeguard important business information.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Why Choose Dextsoft Systems?</h2>
+          <p>
+            Technology should help your business work better, not
+            become a daily obstacle.
+          </p>
+        </div>
+
+        <div class="benefits">
+          <div class="benefit">
+            <h3>Less Downtime</h3>
+            <p>Identify and address technical issues to help minimise interruptions to your work.</p>
+          </div>
+
+          <div class="benefit">
+            <h3>Reliable Systems</h3>
+            <p>Maintain your computers, applications and data systems through practical IT support.</p>
+          </div>
+
+          <div class="benefit">
+            <h3>Better Data Management</h3>
+            <p>Keep business records organised and support dependable access to essential information.</p>
+          </div>
+
+          <div class="benefit">
+            <h3>Support for Growing Businesses</h3>
+            <p>Get practical IT assistance suited to your organisation's needs and resources.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h2>How We Work</h2>
+          <p>A straightforward approach to resolving your IT needs.</p>
+        </div>
+
+        <div class="process">
+          <div class="process-item">
+            <h3>1. Understand the Problem</h3>
+            <p>We discuss the issue, its impact and the support you need.</p>
+          </div>
+
+          <div class="process-item">
+            <h3>2. Assess and Troubleshoot</h3>
+            <p>We investigate the problem and identify practical solutions.</p>
+          </div>
+
+          <div class="process-item">
+            <h3>3. Resolve and Maintain</h3>
+            <p>We work toward a solution and recommend maintenance practices to help prevent recurring issues.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Need Reliable IT Support?</h2>
+        <p>
+          Whether you need help with a computer, database, technical
+          issue or backup routine, contact Dextsoft Systems to discuss
+          your requirements.
+        </p>
+        <a class="button"
+           href="mailto:charlesmaarah@gmail.com?subject=IT%20Support%20Enquiry">
+          Email Us About IT Support
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Dextsoft Systems. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
