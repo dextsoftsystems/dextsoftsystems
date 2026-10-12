@@ -1,1 +1,488 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dextsoft Systems provides Excel dashboards, data cleaning, business intelligence, and data analytics services.">
+  <title>Data Analytics Portfolio | Dextsoft Systems</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --blue: #155eef;
+      --dark: #142238;
+      --grey: #64748b;
+      --light: #f3f6fb;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--dark);
+      background: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e2e8f0;
+      padding: 18px 7%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--blue);
+    }
+
+    nav a {
+      color: var(--dark);
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #10213c, #1749a3);
+      color: white;
+      padding: 85px 7%;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      color: #b9d4ff;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.2;
+      margin: 16px 0;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #e2eaff;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      padding: 12px 22px;
+      border-radius: 6px;
+      margin-top: 24px;
+      font-weight: bold;
+    }
+
+    .hero .button {
+      background: white;
+      color: #1749a3;
+    }
+
+    section {
+      padding: 65px 7%;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 35px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading p,
+    .muted {
+      color: var(--grey);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 25px;
+      background: white;
+      box-shadow: 0 5px 20px rgba(20, 34, 56, 0.04);
+    }
+
+    .card h3 {
+      margin: 12px 0;
+      font-size: 20px;
+    }
+
+    .icon {
+      font-size: 30px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eaf1ff;
+      color: #1749a3;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin: 4px 3px 0 0;
+    }
+
+    .projects {
+      background: var(--light);
+    }
+
+    .project-label {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .project-preview {
+      background: #eaf1ff;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+    }
+
+    .project-preview .metric {
+      display: inline-block;
+      background: white;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 4px;
+      font-size: 13px;
+    }
+
+    .project-preview strong {
+      display: block;
+      color: #1749a3;
+      font-size: 19px;
+    }
+
+    .tools {
+      text-align: center;
+    }
+
+    .tools-list {
+      max-width: 850px;
+      margin: 25px auto 0;
+    }
+
+    .contact {
+      text-align: center;
+      background: #142238;
+      color: white;
+    }
+
+    .contact p {
+      color: #d5dfef;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .contact .button {
+      background: white;
+      color: #1749a3;
+    }
+
+    footer {
+      background: #0c1728;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 22px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 16px 5%;
+      }
+
+      nav {
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 0 12px 0 0;
+      }
+
+      .hero {
+        padding: 60px 6%;
+      }
+
+      section {
+        padding: 48px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a class="logo" href="index.html">DEXTSOFT SYSTEMS</a>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">Data Analytics & Business Intelligence</span>
+        <h1>Turn Your Business Data Into Better Decisions</h1>
+        <p>
+          Dextsoft Systems helps businesses organise data, understand
+          performance, track key indicators, and communicate insights
+          through Excel dashboards, visual reports, and data analysis.
+        </p>
+        <a class="button" href="#portfolio">Explore My Portfolio</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-heading">
+        <h2>Data Services</h2>
+        <p>
+          Practical data solutions that help organisations understand
+          what is happening in their operations and where improvements
+          may be needed.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">📊</div>
+          <h3>Excel Dashboards</h3>
+          <p class="muted">
+            Interactive dashboards with charts, KPIs, PivotTables,
+            and slicers to monitor business performance.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🧹</div>
+          <h3>Data Cleaning</h3>
+          <p class="muted">
+            Identify duplicates, correct inconsistencies, organise
+            records, and prepare data for reliable analysis.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📈</div>
+          <h3>Business Intelligence Reports</h3>
+          <p class="muted">
+            Transform data into understandable charts, performance
+            summaries, trends, and actionable recommendations.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🗄️</div>
+          <h3>Database Analysis</h3>
+          <p class="muted">
+            Use structured data and SQL queries to retrieve,
+            organise, and analyse information for reporting.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio" class="projects">
+      <div class="section-heading">
+        <h2>Data Analytics Portfolio</h2>
+        <p>
+          Demonstration projects showing how business and education
+          data can be organised, analysed, and presented.
+          Project files and screenshots can be added as they are completed.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <span class="project-label">Project 01 · Excel</span>
+          <div class="project-preview">
+            <span class="metric">
+              <strong>KPI</strong>
+              Expense tracking
+            </span>
+            <span class="metric">
+              <strong>Charts</strong>
+              Spending trends
+            </span>
+            <span class="metric">
+              <strong>Filters</strong>
+              Category analysis
+            </span>
+          </div>
+          <h3>Retail Sales & Expenses Dashboard</h3>
+          <p class="muted">
+            A demonstration of how retail transactions can be analysed
+            to monitor expenses, compare categories, and identify
+            spending patterns.
+          </p>
+          <p>
+            <span class="tag">Excel</span>
+            <span class="tag">PivotTables</span>
+            <span class="tag">Slicers</span>
+            <span class="tag">KPIs</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="project-label">Project 02 · Education</span>
+          <div class="project-preview">
+            <span class="metric">
+              <strong>Subjects</strong>
+              Performance
+            </span>
+            <span class="metric">
+              <strong>Terms</strong>
+              Comparisons
+            </span>
+            <span class="metric">
+              <strong>Trends</strong>
+              Results analysis
+            </span>
+          </div>
+          <h3>Student Performance Analysis</h3>
+          <p class="muted">
+            A demonstration using student assessment data to compare
+            subject performance, examine changes across terms, and
+            present findings through charts.
+          </p>
+          <p>
+            <span class="tag">Data Cleaning</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Charts</span>
+            <span class="tag">Reporting</span>
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="project-label">Project 03 · Business</span>
+          <div class="project-preview">
+            <span class="metric">
+              <strong>Sales</strong>
+              Performance
+            </span>
+            <span class="metric">
+              <strong>Trends</strong>
+              Over time
+            </span>
+            <span class="metric">
+              <strong>Insights</strong>
+              Decisions
+            </span>
+          </div>
+          <h3>Business Performance Report</h3>
+          <p class="muted">
+            A proposed reporting project showing how sales and
+            operational data can be summarised into trends,
+            performance indicators, and recommendations.
+          </p>
+          <p>
+            <span class="tag">Analysis</span>
+            <span class="tag">Visualisation</span>
+            <span class="tag">BI Reporting</span>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="tools">
+      <div class="section-heading">
+        <h2>Tools & Skills</h2>
+        <p>
+          Tools used for organising data, performing analysis,
+          creating visualisations, and communicating results.
+        </p>
+      </div>
+
+      <div class="tools-list">
+        <span class="tag">Microsoft Excel</span>
+        <span class="tag">Microsoft Power BI</span>
+        <span class="tag">Power Query</span>
+        <span class="tag">DAX</span>
+        <span class="tag">Data Modelling</span>
+        <span class="tag">PivotTables</span>
+        <span class="tag">Data Cleaning</span>
+        <span class="tag">Charts & Dashboards</span>
+        <span class="tag">SQL</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Business Reporting</span>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Have a Data Project in Mind?</h2>
+      <p>
+        Whether you need an Excel dashboard, organised business
+        records, or a report that makes your data easier to understand,
+        let's discuss your requirements.
+      </p>
+      <a class="button"
+         href="mailto:charlesmaarah@gmail.com?subject=Data%20Analytics%20Enquiry">
+        Contact Dextsoft Systems
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Dextsoft Systems. All rights reserved.</p>
+    <p>Data Analytics | Business Intelligence | IT Solutions</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
