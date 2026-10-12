@@ -1,1 +1,307 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dextsoft Systems offers data analytics, Excel dashboards, web design, development and IT support services.">
+  <title>Dextsoft Systems | Technology Solutions</title>
+  <style>
+    :root {
+      --blue: #155eef;
+      --dark: #14213d;
+      --grey: #64748b;
+      --light: #f4f7fb;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--dark);
+      line-height: 1.7;
+      background: var(--white);
+    }
+
+    a { text-decoration: none; }
+
+    header {
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #e5eaf2;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--dark);
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      background: var(--blue);
+      color: white;
+      border-radius: 12px;
+      font-size: 17px;
+    }
+
+    nav { display: flex; gap: 20px; flex-wrap: wrap; }
+    nav a { color: var(--dark); font-size: 14px; }
+
+    .hero {
+      padding: 95px 7%;
+      background: linear-gradient(130deg, #eef4ff, #ffffff 70%);
+    }
+
+    .hero-content { max-width: 760px; }
+
+    .eyebrow {
+      color: var(--blue);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 60px);
+      line-height: 1.15;
+      margin: 16px 0;
+    }
+
+    h2 { font-size: 32px; line-height: 1.25; }
+    .hero p { color: var(--grey); font-size: 18px; }
+
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      padding: 12px 22px;
+      border-radius: 7px;
+      margin: 12px 8px 0 0;
+      font-weight: bold;
+    }
+
+    .button-outline {
+      background: transparent;
+      border: 1px solid var(--blue);
+      color: var(--blue);
+    }
+
+    section { padding: 70px 7%; }
+    .section-heading { max-width: 650px; margin-bottom: 30px; }
+    .section-heading p, .muted { color: var(--grey); }
+
+    .services {
+      background: var(--light);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 26px;
+      border: 1px solid #e5eaf2;
+      border-radius: 12px;
+    }
+
+    .card h3 { margin-top: 8px; }
+    .service-icon { font-size: 30px; }
+    .card p { color: var(--grey); }
+    .card ul { padding-left: 20px; }
+
+    .projects { border-top: 1px solid #e5eaf2; }
+
+    .project {
+      background: var(--light);
+      padding: 24px;
+      border-radius: 10px;
+    }
+
+    .project a { color: var(--blue); font-weight: bold; }
+
+    .contact {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+    }
+
+    .contact p { color: #d1d9e6; }
+    .contact .section-heading { margin: 0 auto; }
+    .contact .button { background: white; color: var(--dark); }
+
+    footer {
+      padding: 22px 7%;
+      text-align: center;
+      color: var(--grey);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 16px 5%; }
+      nav { gap: 12px; }
+      .hero { padding: 65px 6%; }
+      section { padding: 52px 6%; }
+      h2 { font-size: 27px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="brand" href="#home" aria-label="Dextsoft Systems home">
+      <span class="logo">DS</span>
+      <span>Dextsoft Systems</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">Practical Technology Solutions</span>
+        <h1>Turning Data and Technology Into Business Value</h1>
+        <p>
+          We help businesses understand their data, build a strong online
+          presence, and keep their technology working reliably.
+        </p>
+        <a class="button" href="#services">Explore Our Services</a>
+        <a class="button button-outline" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-heading">
+        <span class="eyebrow">What We Do</span>
+        <h2>Technology Services for Your Business</h2>
+        <p>Practical, affordable solutions designed around real business needs.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="service-icon" aria-hidden="true">📊</div>
+          <h3>Data Analytics & Business Intelligence</h3>
+          <p>Turn raw data into useful information for better decisions.</p>
+          <ul>
+            <li>Excel dashboards and reports</li>
+            <li>Data cleaning and analysis</li>
+            <li>Charts and KPI tracking</li>
+            <li>Business performance insights</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="service-icon" aria-hidden="true">💻</div>
+          <h3>Web Design & Development</h3>
+          <p>Create a professional online presence for your organisation.</p>
+          <ul>
+            <li>Responsive business websites</li>
+            <li>HTML, CSS and JavaScript</li>
+            <li>PHP and database applications</li>
+            <li>Website maintenance</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="service-icon" aria-hidden="true">🛠️</div>
+          <h3>IT Support & Systems</h3>
+          <p>Keep your computers, systems and data operating reliably.</p>
+          <ul>
+            <li>Software and hardware troubleshooting</li>
+            <li>Technical helpdesk support</li>
+            <li>Database management</li>
+            <li>Backup and IT maintenance</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-heading">
+        <span class="eyebrow">Our Portfolio</span>
+        <h2>Selected Projects</h2>
+        <p>
+          Explore practical demonstrations of data, software and technology
+          solutions. Project examples will be added here as they are completed.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="project">
+          <h3>Excel Business Dashboard</h3>
+          <p class="muted">A sample dashboard for tracking expenses, KPIs and business performance.</p>
+          <a href="#contact">Ask about this project →</a>
+        </article>
+
+        <article class="project">
+          <h3>Website Design Demo</h3>
+          <p class="muted">A responsive website concept demonstrating modern web design skills.</p>
+          <a href="#contact">Ask about this project →</a>
+        </article>
+
+        <article class="project">
+          <h3>IT Support Case Study</h3>
+          <p class="muted">A practical example of troubleshooting, maintenance and system reliability.</p>
+          <a href="#contact">Ask about this project →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-heading">
+        <span class="eyebrow">About Dextsoft</span>
+        <h2>Technology That Solves Problems</h2>
+        <p>
+          Dextsoft Systems focuses on helping organisations use data,
+          websites and IT systems more effectively. Our approach combines
+          technical skills with practical solutions that support everyday
+          operations and informed decision-making.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-heading">
+        <span class="eyebrow">Let's Work Together</span>
+        <h2>Have a Project in Mind?</h2>
+        <p>Contact Dextsoft Systems to discuss your data, website or IT support needs.</p>
+        <a class="button" href="mailto:charlesmaarah@gmail.com">Email Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Dextsoft Systems. All rights reserved.</p>
+    <p>Data Analytics · Web Design · IT Support</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
