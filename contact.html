@@ -1,1 +1,406 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Dextsoft Systems for data analytics, web design and development, and IT support services in Nairobi, Kenya.">
+  <title>Contact Us | Dextsoft Systems</title>
+
+  <style>
+    :root {
+      --blue: #155eef;
+      --dark-blue: #102a43;
+      --grey: #52606d;
+      --light-grey: #f3f6fa;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--dark-blue);
+      background: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e5eaf0;
+      padding: 18px 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--blue);
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: var(--grey);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #102a43, #155eef);
+      color: var(--white);
+      padding: 65px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 44px);
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: auto;
+      color: #edf3ff;
+      font-size: 17px;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 35px;
+      align-items: start;
+    }
+
+    .contact-info h2,
+    .form-card h2 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      color: var(--grey);
+      margin-bottom: 25px;
+    }
+
+    .contact-item {
+      background: var(--light-grey);
+      padding: 18px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .contact-item h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .contact-item p,
+    .contact-item a {
+      color: var(--grey);
+      overflow-wrap: anywhere;
+    }
+
+    .contact-item a:hover {
+      color: var(--blue);
+    }
+
+    .form-card {
+      border: 1px solid #e3e9f0;
+      border-radius: 10px;
+      padding: 28px;
+      box-shadow: 0 5px 20px rgba(16, 42, 67, 0.06);
+    }
+
+    .form-card > p {
+      color: var(--grey);
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 14px 0 6px;
+      font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd2d9;
+      border-radius: 6px;
+      font: inherit;
+      font-size: 15px;
+      background: var(--white);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid #b7ccff;
+      border-color: var(--blue);
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    button,
+    .button {
+      display: inline-block;
+      border: none;
+      border-radius: 6px;
+      padding: 13px 22px;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover,
+    .button:hover {
+      background: #1047b8;
+    }
+
+    .note {
+      color: var(--grey);
+      font-size: 13px;
+      margin-top: 12px;
+    }
+
+    .closing {
+      background: var(--light-grey);
+      text-align: center;
+    }
+
+    .closing h2 {
+      font-size: 27px;
+      margin-bottom: 10px;
+    }
+
+    .closing p {
+      color: var(--grey);
+      max-width: 650px;
+      margin: auto;
+    }
+
+    footer {
+      background: #0b1f33;
+      color: #cbd2d9;
+      text-align: center;
+      padding: 22px 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 42px 0;
+      }
+
+      .form-card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">Dextsoft Systems</a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="data-analytics.html">Data Analytics</a>
+        <a href="web-design.html">Web Design</a>
+        <a href="it-support.html">IT Support</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Let's Talk About Your Business Needs</h1>
+        <p>
+          Looking for data insights, a professional website or reliable
+          IT support? Get in touch with Dextsoft Systems and tell us
+          how we can help.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact-layout">
+
+        <div class="contact-info">
+          <h2>Contact Dextsoft Systems</h2>
+          <p class="intro">
+            We welcome enquiries from businesses, organisations,
+            institutions and individuals looking for practical
+            technology solutions.
+          </p>
+
+          <div class="contact-item">
+            <h3>Email</h3>
+            <a href="mailto:charlesmaarah@gmail.com">
+              charlesmaarah@gmail.com
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <h3>Phone &amp; WhatsApp</h3>
+            <a href="https://wa.me/254735315124" target="_blank" rel="noopener noreferrer">
+              +254 735 315124
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <h3>Location</h3>
+            <p>Ruai, Nairobi, Kenya</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Our Services</h3>
+            <p>Data Analytics · Web Design &amp; Development · IT Support &amp; Systems</p>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h2>Send an Enquiry</h2>
+          <p>Tell us a little about the service you need.</p>
+
+          <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Service Required</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Data Analytics &amp; Business Reports</option>
+              <option>Web Design &amp; Development</option>
+              <option>IT Support &amp; Systems</option>
+              <option>Database Management</option>
+              <option>Other Enquiry</option>
+            </select>
+
+            <label for="message">How Can We Help?</label>
+            <textarea id="message" name="message"
+              placeholder="Briefly describe what you need..."
+              required></textarea>
+
+            <button type="submit">Prepare Email Enquiry</button>
+
+            <p class="note">
+              Your email application will open with your enquiry prepared.
+              You will need to send the email yourself.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container">
+        <h2>Let's Find the Right Solution</h2>
+        <p>
+          From making sense of your business data to building your
+          website and maintaining your IT systems, Dextsoft Systems
+          is ready to discuss your next project.
+        </p>
+        <a class="button" href="mailto:charlesmaarah@gmail.com">
+          Email Dextsoft Systems
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Dextsoft Systems. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const service = document.getElementById("service").value;
+      const message = document.getElementById("message").value.trim();
+
+      const subject = encodeURIComponent("Website Enquiry: " + service);
+      const body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Service: " + service + "\n\n" +
+        "Message:\n" + message
+      );
+
+      window.location.href =
+        "mailto:charlesmaarah@gmail.com?subject=" +
+        subject + "&body=" + body;
+    });
+  </script>
+
+</body>
+</html>
+
